@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * Created by xiangpeng on 2017/12/25.
  */
-@CrossOrigin(origins="http://127.0.0.1:8080",maxAge=3600)
+@CrossOrigin(origins="http://47.52.105.123:80",maxAge=3600)
 @Controller
 @RequestMapping("/AST")
 
@@ -133,7 +133,7 @@ public class ActiveOperation {
             throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
+        response.setHeader("Access-Control-Allow-Origin", "http://47.52.105.123:80");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
         response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
         // 接收跨域的cookie
@@ -237,7 +237,7 @@ public class ActiveOperation {
             throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
+        response.setHeader("Access-Control-Allow-Origin", "http://47.52.105.123:80");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
         response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
         // 接收跨域的cookie
@@ -284,7 +284,7 @@ public class ActiveOperation {
             throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
+        response.setHeader("Access-Control-Allow-Origin", "http://47.52.105.123:80");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
         response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
         // 接收跨域的cookie
@@ -353,7 +353,7 @@ public class ActiveOperation {
             throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
+        response.setHeader("Access-Control-Allow-Origin", "http://47.52.105.123:80");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
         response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
         // 接收跨域的cookie
@@ -395,7 +395,7 @@ public class ActiveOperation {
     {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
+        response.setHeader("Access-Control-Allow-Origin", "http://47.52.105.123:80");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
         response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
         // 接收跨域的cookie
@@ -496,7 +496,7 @@ public class ActiveOperation {
     {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
+        response.setHeader("Access-Control-Allow-Origin", "http://47.52.105.123:80");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
         response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
         // 接收跨域的cookie
@@ -587,7 +587,7 @@ public class ActiveOperation {
     {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:8080");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
+        response.setHeader("Access-Control-Allow-Origin", "http://47.52.105.123:80");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
         response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
         // 接收跨域的cookie
