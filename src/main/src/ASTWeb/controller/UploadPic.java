@@ -20,7 +20,6 @@ import java.io.PrintWriter;
 import java.util.*;
 
 
-
 /**
  * Created by xiangpeng on 2017/12/18.
  */
@@ -57,8 +56,9 @@ public class UploadPic {
             try{
                 System.out.println("Value = " + entry.getValue().getName());
                 String fileName = entry.getValue().getOriginalFilename();
-               data.data.add("http://127.0.0.1:80/img/"+fileName);
-               FileOutputStream fos = FileUtils.openOutputStream(new File("d:/img/" +fileName));//打开FileOutStrean流
+               data.data.add("http://47.52.105.123:8089/img/"+fileName);
+               // FileOutputStream fos = FileUtils.openOutputStream(new File("d:/img/" +fileName));//打开FileOutStrean流
+                FileOutputStream fos = FileUtils.openOutputStream(new File("/usr/local/picServer/img/" +fileName));//打开FileOutStrean流
                IOUtils.copy(entry.getValue().getInputStream(),fos);//将MultipartFile file转成二进制流并输入到FileOutStrean
                fos.close();
            }catch (Exception error)
