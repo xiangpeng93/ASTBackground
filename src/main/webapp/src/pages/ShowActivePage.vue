@@ -22,7 +22,7 @@
   },
   mounted()
   {
-	var submitUrl = "http://astspace.org/AST/activeQueryListByPage";
+	var submitUrl = "http://astspace.org:8080/AST/activeQueryListByPage";
 	console.log(submitUrl);
 
 	var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {Number:'10',PageNumber:'0'},async:false});

@@ -23,7 +23,7 @@ import java.util.*;
 /**
  * Created by xiangpeng on 2017/12/18.
  */
-@CrossOrigin(origins="http://47.52.105.123:80",maxAge=3600)
+@CrossOrigin(origins="http://astspace.org",maxAge=3600)
 @Controller
 @RequestMapping("/AST")
 
@@ -40,7 +40,7 @@ public class UploadPic {
     @ResponseBody
     @RequestMapping(value = "/uploadPic",method = RequestMethod.POST)
     public void uploadPic(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setHeader("Access-Control-Allow-Origin", "http://47.52.105.123:80");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
+        response.setHeader("Access-Control-Allow-Origin", "http://astspace.org");  // 第二个参数填写允许跨域的域名称，不建议直接写 "*"
         response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
         response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
         // 接收跨域的cookie
@@ -56,7 +56,7 @@ public class UploadPic {
             try{
                 System.out.println("Value = " + entry.getValue().getName());
                 String fileName = entry.getValue().getOriginalFilename();
-               data.data.add("http://47.52.105.123/img/"+fileName);
+               data.data.add("http://astspace.org/img/"+fileName);
                // FileOutputStream fos = FileUtils.openOutputStream(new File("d:/img/" +fileName));//打开FileOutStrean流
                 FileOutputStream fos = FileUtils.openOutputStream(new File("/usr/local/nginx/picServer/img/" +fileName));//打开FileOutStrean流
                IOUtils.copy(entry.getValue().getInputStream(),fos);//将MultipartFile file转成二进制流并输入到FileOutStrean

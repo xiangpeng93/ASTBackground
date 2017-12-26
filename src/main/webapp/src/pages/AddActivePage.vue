@@ -59,7 +59,7 @@
 	//if(this.GetQueryString("id") !== null)
 	{
 		console.log(this.GetQueryString("id"))
-		var submitUrl = "http://astspace.org/AST/activeQueryById";
+		var submitUrl = "http://astspace.org:8080/AST/activeQueryById";
 		console.log(submitUrl);
 
 		var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {id:this.GetQueryString("id")},async:false});
@@ -89,7 +89,7 @@
 	},
   createEdit: function () {
 	  //editor2.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
-	  editor2.customConfig.uploadImgServer = 'http://astspace.org/AST/uploadPic'  // 上传图片到服务器
+	  editor2.customConfig.uploadImgServer = 'http://astspace.org:8080/AST/uploadPic'  // 上传图片到服务器
 	  editor2.customConfig.zIndex = 1
 	  editor2.create()
   },
@@ -100,7 +100,7 @@
   },
   
   AddActiveInfo: function () {
-	var submitUrl = "http://astspace.org/AST/activeAdd";
+	var submitUrl = "http://astspace.org:8080/AST/activeAdd";
 	console.log(submitUrl);
 	
 	var htmlobj=$.ajax({ type: 'POST',url:submitUrl,dataType:'json',data: {active_name:$("#active_name").val(),active_number:$("#active_number").val(),active_person_number:$("#active_person_number").val(),active_body:editor2.txt.html(),active_pic:'img/pic1.jpg'},async:false});

@@ -46,7 +46,7 @@
 	
 	deleteActive:function(){
 		console.log('deleteActive.');
-		var submitUrl = "http://astspace.org/AST/activeDelete";
+		var submitUrl = "http://astspace.org:8080/AST/activeDelete";
 		console.log(submitUrl);
 		var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {id:this.id},async:false});
 		console.log(htmlobj.responseText);

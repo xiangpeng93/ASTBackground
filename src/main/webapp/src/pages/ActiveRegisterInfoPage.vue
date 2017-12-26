@@ -63,7 +63,7 @@
   mounted()
   {
 	console.log(this.GetQueryString("name"))
-	var submitUrl = "http://astspace.org/AST/activeQueryRegisterList";
+	var submitUrl = "http://astspace.org:8080/AST/activeQueryRegisterList";
 	console.log(submitUrl);
 
 	var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {active_name:this.GetQueryString("name")},async:false});

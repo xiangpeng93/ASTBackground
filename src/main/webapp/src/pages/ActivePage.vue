@@ -114,7 +114,7 @@
 		}
 		else
 		{
-		var submitUrl = "http://astspace.org/AST/activeRegister";
+		var submitUrl = "http://astspace.org:8080/AST/activeRegister";
 		console.log(submitUrl);
 		var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {active_name:this.head, user_name:$("#userName").val(),user_age:$("#userAge").val(),user_phone:$("#userPhone").val(),active_session:$("#activeSession").val()},async:false});
 		console.log(htmlobj.responseText);
@@ -123,7 +123,7 @@
 	},
 	QueryRegisterNumer:function()
 	{
-		var queryRegsiterNumber = "http://astspace.org/AST/queryRegisterNumber";
+		var queryRegsiterNumber = "http://astspace.org:8080/AST/queryRegisterNumber";
 		console.log(queryRegsiterNumber);
 
 		var result=$.ajax({type: 'GET',url:queryRegsiterNumber,data: {active_name:this.head,active_session:$('#activeSession').val()},async:false});
@@ -136,7 +136,7 @@
   mounted()
   {
 	console.log(this.GetQueryString("id"))
-	var submitUrl = "http://astspace.org/AST/activeQueryById";
+	var submitUrl = "http://astspace.org:8080/AST/activeQueryById";
 	console.log(submitUrl);
 
 	var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {id:this.GetQueryString("id")},async:false});
