@@ -91,6 +91,7 @@
 	  //editor2.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
 	  editor2.customConfig.uploadImgServer = 'http://astspace.org:8080/AST/uploadPic'  // 上传图片到服务器
 	  editor2.customConfig.zIndex = 1
+	  editor2.customConfig.uploadImgTimeout = 60000
 	  editor2.create()
   },
   
@@ -103,7 +104,7 @@
 	var submitUrl = "http://astspace.org:8080/AST/activeAdd";
 	console.log(submitUrl);
 	
-	var htmlobj=$.ajax({ type: 'POST',url:submitUrl,dataType:'json',data: {active_name:$("#active_name").val(),active_number:$("#active_number").val(),active_person_number:$("#active_person_number").val(),active_body:editor2.txt.html(),active_pic:'img/pic1.jpg'},async:false});
+	var htmlobj=$.ajax({ type: 'POST',url:submitUrl,dataType:'json',data: {active_name:$("#active_name").val(),active_number:$("#active_number").val(),active_person_number:$("#active_person_number").val(),active_body:editor2.txt.html(),active_pic:'img/astlogo.jpeg'},async:false});
 	alert(htmlobj.responseText);
   }
   }

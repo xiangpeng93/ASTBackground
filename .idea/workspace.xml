@@ -10,13 +10,14 @@
     <list default="true" id="eafbce97-b0cb-4bc0-98e9-01d8d7f492e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java" afterPath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/UploadPic.java" afterPath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/UploadPic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/components/titleCard.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/components/titleCard.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/ActivePage.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/ActivePage.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/layouts/Main.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/layouts/Main.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/About.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/About.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/ActiveRegisterInfoPage.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/ActiveRegisterInfoPage.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/AddActivePage.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/AddActivePage.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/MangerActivePage.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/MangerActivePage.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/ShowActivePage.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/ShowActivePage.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/Home.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/Home.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/Login.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/Login.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/Register.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/Register.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/../ASTMavenWeb/out/" />
     <ignored path="$PROJECT_DIR$/../ASTMavenWeb/target/" />
@@ -85,21 +86,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActiveOperation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActiveOperation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-813">
-              <caret line="589" column="74" lean-forward="false" selection-start-line="589" selection-start-column="74" selection-end-line="589" selection-end-column="74" />
-              <folding />
+            <state relative-caret-position="408">
+              <caret line="289" column="22" lean-forward="false" selection-start-line="289" selection-start-column="22" selection-end-line="289" selection-end-column="22" />
+              <folding>
+                <element signature="e#2601#2610#0" expanded="true" />
+                <element signature="e#15866#15892#0" expanded="true" />
+                <element signature="e#23834#23852#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadPic.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UploadPic.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/UploadPic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+            <state relative-caret-position="779">
+              <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -146,6 +151,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>active_name</find>
+    </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
     <option name="SHOW_TAGS" value="true" />
@@ -239,8 +249,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,6 +276,10 @@
               <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated-sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -286,6 +300,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ASTWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1035,7 +1053,8 @@
       <workItem from="1513566520378" duration="2480000" />
       <workItem from="1513575921308" duration="11665000" />
       <workItem from="1514165019246" duration="18314000" />
-      <workItem from="1514280828748" duration="4669000" />
+      <workItem from="1514280828748" duration="4741000" />
+      <workItem from="1514337723210" duration="2042000" />
     </task>
     <task id="LOCAL-00001" summary="https://github.com/xiangpeng93/ASTBackground.git">
       <created>1514171162932</created>
@@ -1058,11 +1077,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514286155122</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.更新使用域名，更改前后台交互">
+      <created>1514288670759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1514288670759</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38741000" />
+    <option name="totallyTimeSpent" value="40855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
@@ -1070,20 +1096,19 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3268817" sideWeight="0.5582983" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3268817" sideWeight="0.5603992" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4139785" sideWeight="0.47531512" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3268817" sideWeight="0.44170168" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3268817" sideWeight="0.43960086" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1099,6 +1124,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1125,7 +1151,8 @@
     <MESSAGE value="https://github.com/xiangpeng93/ASTBackground.git" />
     <MESSAGE value="活动操作流程添加&#10;1.新增，修改，阅读统计，活动展示" />
     <MESSAGE value="修改部署方式&#10;1.nginx部署前端 占用80端口&#10;2.tomcat部署后端 占用8080端口" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改部署方式&#10;1.nginx部署前端 占用80端口&#10;2.tomcat部署后端 占用8080端口" />
+    <MESSAGE value="1.更新使用域名，更改前后台交互" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.更新使用域名，更改前后台交互" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1234,7 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1242,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1250,7 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,7 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,7 +1289,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,18 +1358,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/UploadPic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="408">
+          <caret line="289" column="22" lean-forward="false" selection-start-line="289" selection-start-column="22" selection-end-line="289" selection-end-column="22" />
+          <folding>
+            <element signature="e#2601#2610#0" expanded="true" />
+            <element signature="e#15866#15892#0" expanded="true" />
+            <element signature="e#23834#23852#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/UploadPic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-813">
-          <caret line="589" column="74" lean-forward="false" selection-start-line="589" selection-start-column="74" selection-end-line="589" selection-end-column="74" />
+        <state relative-caret-position="779">
+          <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="42" />
           <folding />
         </state>
       </provider>

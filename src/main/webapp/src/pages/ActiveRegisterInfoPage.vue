@@ -66,7 +66,7 @@
 	var submitUrl = "http://astspace.org:8080/AST/activeQueryRegisterList";
 	console.log(submitUrl);
 
-	var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {active_name:this.GetQueryString("name")},async:false});
+	var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {active_name:decodeURI(this.GetQueryString("name"))},async:false});
 	console.log(htmlobj.responseText);
 	this.registerInfoList = JSON.parse(htmlobj.responseText);
 	
