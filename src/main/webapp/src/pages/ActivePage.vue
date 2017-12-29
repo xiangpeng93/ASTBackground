@@ -6,6 +6,7 @@
         <p  style=" font-family: Helvetica;" >
          创建时间:{{ time }}  阅读次数:{{ count }}
 		 <span class="pull-right">发布者:{{ auther }}</span> 
+		 
 		 <br>
 		
         </p>
@@ -75,6 +76,7 @@
 
 <script>
   import MainLayout from '../layouts/Main.vue'
+  
   export default {
   components: {
   MainLayout
@@ -138,24 +140,38 @@
 	console.log(this.GetQueryString("id"))
 	var submitUrl = "http://astspace.org:8080/AST/activeQueryById";
 	console.log(submitUrl);
-
-	var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {id:this.GetQueryString("id")},async:false});
-	console.log(htmlobj.responseText);
-	var resultData = JSON.parse(htmlobj.responseText);
-	
-	this.head=resultData.activeName;
-	this.body=resultData.activeBody;
-	this.time=resultData.activeTime;
-	this.count = resultData.activeReadCount;
-	this.auther = resultData.activeAuthor;
-	var number = resultData.activeNumber;
-	for (var i = 0; i < number ;i++)
-	{
-		$('#activeSession').append("<option> " + Number(i + 1) +"</option>");
+	try {
+		var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {id:this.GetQueryString("id")},async:false});
+		console.log(htmlobj.responseText);
+		var resultData = JSON.parse(htmlobj.responseText);
+		
+		this.head=resultData.activeName;
+		this.body=resultData.activeBody;
+		this.time=resultData.activeTime;
+		this.count = resultData.activeReadCount;
+		this.auther = resultData.activeAuthor;
+		var number = resultData.activeNumber;
+		for (var i = 0; i < number ;i++)
+		{
+			$('#activeSession').append("<option> " + Number(i + 1) +"</option>");
+		}
+		this.peopleNumberMax = resultData.activePeopleNumber;
+		this.QueryRegisterNumer();
 	}
-	this.peopleNumberMax = resultData.activePeopleNumber;
-	this.QueryRegisterNumer();
-	
+	catch(error)
+	{
+		console.log(error);
+		this.body = '<img src=\'/img/pic1.jpg\'>';
+	}
+	finally{
+		
+	}
+  },
+  updated()
+  {
+  console.log('try img')
+		$("img").attr("class","img-responsive center-block");
   }
+  
   }
 </script>
