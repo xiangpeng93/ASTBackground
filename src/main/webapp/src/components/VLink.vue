@@ -1,5 +1,5 @@
 <template>
-  <li v-bind:class="{ active: isActive }">
+  <li v-bind:class="{ active: isActive  }">
     <a  v-bind:href="href"
         v-on:click="go">
       <slot></slot>

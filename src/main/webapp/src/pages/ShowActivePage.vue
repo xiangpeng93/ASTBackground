@@ -22,21 +22,45 @@
   },
   mounted()
   {
-	var submitUrl = "http://astspace.org:8080/AST/activeQueryListByPage";
-	console.log(submitUrl);
+	  try{
+		var submitUrl = "http://astspace.org:8080/AST/activeQueryListByPage";
+		console.log(submitUrl);
 
-	var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {Number:'10',PageNumber:'0'},async:false});
-	console.log(htmlobj.responseText);
-	var resultData = JSON.parse(htmlobj.responseText);
-	for(var i=0; i<resultData.length; i++)  
-	  { 
-		this.items.push({
-        'component': 'activeInfoCard',
-        'headText': resultData[i].activeName,
-        'bodyText': resultData[i].activeBody,
-        'imgUrl': resultData[i].activePic,
-        'href': resultData[i].activeLink });
-	  } 
-	}
+		var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {Number:'10',PageNumber:'0'},async:false});
+		console.log(htmlobj.responseText);
+		var resultData = JSON.parse(htmlobj.responseText);
+		for(var i=0; i<resultData.length; i++)  
+		  { 
+			this.items.push({
+			'component': 'activeInfoCard',
+			'headText': resultData[i].activeName,
+			'bodyText': resultData[i].activeBody,
+			'imgUrl': resultData[i].activePic,
+			'href': resultData[i].activeLink });
+		  } 
+	  }
+	  catch(e)
+	  {
+		console.log(e)
+	  }
+	  finally
+	  {
+		console.log('updated')
+		if($("html").height() > $("#mainDiv").height())
+		{
+		$("#mainDiv").css("height","96%");
+		}
+	  }
+  },
+  updated()
+  {
+	console.log('updated')
+	if($("html").height() > $("#mainDiv").height())
+	  {
+	  $("#mainDiv").css("height","100%");
+	  }
+
+  }
+  
   }
 </script>
