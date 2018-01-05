@@ -8,11 +8,11 @@
           <div class="form-group">
             <!-- Text input-->
             <label  for="UserName">用户名称</label>
-            <input id="UserName" type="text" placeholder="输入姓名" class="form-control">
+            <input id="UserName" type="text" v-model="userName" placeholder="输入姓名" class="form-control">
         </div>
           <div class="form-group">
             <label for="Password">密码</label>
-            <input type="password" class="form-control" id="Password" placeholder="输入密码">
+            <input type="password" class="form-control" v-model="passwd" id="Password" placeholder="输入密码">
         </div>
 
          
@@ -33,6 +33,13 @@
   export default {
   components: {
   MainLayout
+  },
+  data()
+  {
+      return {
+          userName:"",
+          passwd :""
+      }
   },
   methods:
   {
@@ -56,9 +63,28 @@
 	},
 	Login:function()
 	{
-		console.log($("#UserName").val())
-		this.setCookie("userId",$("#UserName").val(),365)
-		console.log(this.getCookie("userId"))
+        var submitUrl = "http://astspace.org:8080/AST/userLogin";
+        //var submitUrl = "http://127.0.0.1:18080/AST/userLogin";
+
+        try {
+            var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {userName:this.userName,userPasswd:this.passwd},async:false});
+            console.log(htmlobj.responseText);
+            var resultData = JSON.parse(htmlobj.responseText);
+            if(resultData.userName !== "error")
+            {
+                this.setCookie("userId",$("#UserName").val(),365)
+                window.location.href="/";//需要跳转的地址
+            }
+            else {
+                alert("登录失败，用户名密码错误！")
+            }
+
+        }
+        catch(error)
+        {
+            console.log(error);
+        }
+
 	}
   },
   mounted(){

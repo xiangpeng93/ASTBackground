@@ -83,20 +83,32 @@
   {
   //设置cookie
 	setCookie:function(cname, cvalue, exdays) {
-	var d = new Date();
-	d.setTime(d.getTime() + (exdays*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	document.cookie = cname + "=" + cvalue + "; " + expires;
+        try {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        catch (error) {
+            console.log(error)
+        }
 	},
 	//获取cookie
 	getCookie:function(cname) {
-	var name = cname + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0; i<ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0)==' ') c = c.substring(1);
-		if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
-	}
+        try {
+            var name = cname + "=";
+
+			var ca = document.cookie.split(';');
+			for(var i=0; i<ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1);
+				if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+			}
+		}
+		catch (error)
+		{
+		    console.log(error)
+		}
 	return "";
 	},
 	//清除cookie  
@@ -105,21 +117,21 @@
 	},
 	   Logout: function()
 	   {
-		console.log("logout")
-		console.log(this.getCookie("userId"))
-		this.clearCookie("userId")
-		console.log(this.getCookie("userId"))
+		console.log("logout");
+		this.clearCookie("userId");
+		window.location.href="/";//需要跳转的地址
 	   },
 	   IsLogin: function()
 	   {
 		   var userId = this.getCookie("userId")
 		   console.log(userId);
 		   try {
-				   var submitUrl = "http://astspace.org:8080/AST/userInfoQuery";
-				   var htmlobj=$.ajax({ type: 'GET',url:submitUrl,timeout : 1000,data: {UserId:userId},async:false});
+			       var submitUrl = "http://astspace.org:8080/AST/userInfoQuery";
+				   //var submitUrl = "http://127.0.0.1:18080/AST/userInfoQuery";
+				   var htmlobj=$.ajax({ type: 'GET',url:submitUrl,timeout : 1000,data: {userName:userId},async:false});
 				   console.log(htmlobj.responseText);
 				   var resultData = JSON.parse(htmlobj.responseText);
-				   if(resultData.userName != null)
+				   if(resultData.userName != "error")
 				   {
 					return true;
 				   }
@@ -128,7 +140,7 @@
 		   {
 			   console.log(error);
 		   }
-			return false;
+		   return false;
 	   },
        GetUserInfo :function()
        {
@@ -136,12 +148,13 @@
 		   console.log(userId);
 		   try {
 				   var submitUrl = "http://astspace.org:8080/AST/userInfoQuery";
-				   var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {UserId:userId},timeout : 1000,async:false});
+				   //var submitUrl = "http://127.0.0.1:18080/AST/userInfoQuery";
+				   var htmlobj=$.ajax({ type: 'GET',url:submitUrl,data: {userName:userId},timeout : 1000,async:false});
 				   console.log(htmlobj.responseText);
 				   var resultData = JSON.parse(htmlobj.responseText);
-				   if(resultData.isRoot === 1)
+				   if(resultData.userIsRoot == 0)
 				   {
-					return true;
+						return true;
 				   }
 		   }
 		   catch(error)

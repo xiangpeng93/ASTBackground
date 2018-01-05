@@ -41,18 +41,18 @@
 </div>
 
 	<div class="row container-fluid" style="padding-top:10px;margin-left:0px;margin-right:0px;padding:0px;" >
-	  <div class="col-xs-12 col-sm-12 col-md-6" style="padding:10px;">
+	  <div class="col-xs-12 col-sm-12 col-md-6" style="padding:5px;">
 		<a class="img-responsive center-block img-rounded" style="background-image: url(img/pic1.jpg); background-size: cover; background-position: center; height:450px;"></a>
 		</div>
-	  <div class="col-xs-12 col-sm-12 col-md-6" style="padding:10px;"> 
+	  <div class="col-xs-12 col-sm-12 col-md-6" style="padding:5px;">
 		  <a class="img-responsive center-block img-rounded" style="background-image: url(img/pic2.jpg); background-size: cover; background-position: center; height: 450px"></a>
 		</div>
 	</div>
 	<div class="row container-fluid" style="padding-top:10px;margin-left:0px;margin-right:0px;padding:0px;" >
-		<div class="col-xs-12 col-sm-12 col-md-6" style="padding:10px;">
+		<div class="col-xs-12 col-sm-12 col-md-6" style="padding:5px;">
 		<a class="img-responsive center-block img-rounded" style="background-image: url(img/pic3.jpg); background-size: cover; background-position: center; height:450px"></a>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-md-6" style="padding:10px;"> 
+		<div class="col-xs-12 col-sm-12 col-md-6" style="padding:5px;">
 		<a class="img-responsive center-block img-rounded" style="background-image: url(img/pic4.jpg); background-size: cover; background-position: center; height: 450px"></a>
 		</div>
 	</div>

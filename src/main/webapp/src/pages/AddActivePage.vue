@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<hr>
-	<div class="text-right">
+	<div class="text-right container">
 	<button class="btn btn-primary " style="margin:5px;" @click="AddActiveInfo()">保存并发布信息</button>
 	</div>	
 </main-layout>
