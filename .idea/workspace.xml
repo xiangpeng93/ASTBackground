@@ -7,15 +7,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eafbce97-b0cb-4bc0-98e9-01d8d7f492e5" name="Default" comment="添加权限控制，普通用户无法看到活动管理与活动发布">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/UserManger.java" />
+    <list default="true" id="eafbce97-b0cb-4bc0-98e9-01d8d7f492e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java" afterPath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/layouts/Main.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/layouts/Main.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/AddActivePage.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/AddActivePage.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/Home.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/Home.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/Login.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/Login.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/pages/Register.vue" afterPath="$PROJECT_DIR$/src/main/webapp/src/pages/Register.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/UserManger.java" afterPath="$PROJECT_DIR$/src/main/src/ASTWeb/controller/UserManger.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../ASTMavenWeb/out/" />
     <ignored path="$PROJECT_DIR$/../ASTMavenWeb/target/" />
@@ -47,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/src/pages/AddActivePage.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1094">
-              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+              <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#3;n#main-layout#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -59,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/UploadPic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+              <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -88,8 +83,8 @@
       <file leaf-file-name="ActiveRegisterInfoPage.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/src/pages/ActiveRegisterInfoPage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="314">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserManger.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserManger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/UserManger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="373">
+              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2653#2662#0" expanded="true" />
@@ -139,19 +134,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActiveOperation.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ActiveOperation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="183">
+              <caret line="371" column="55" lean-forward="false" selection-start-line="371" selection-start-column="36" selection-end-line="371" selection-end-column="55" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#doSelect#0;class#ActiveOperation#0" expanded="false" />
                 <element signature="e#2740#2749#0" expanded="true" />
                 <element signature="method#activeRegister#0;class#ActiveOperation#0" expanded="false" />
                 <element signature="e#15953#15979#0" expanded="true" />
                 <element signature="class#activeInfoStruct#0;class#ActiveOperation#0" expanded="false" />
-                <element signature="e#23895#23913#0" expanded="true" />
+                <element signature="e#23897#23915#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,6 +171,8 @@
       <find>GetUserInfo</find>
       <find>list</find>
       <find>fast</find>
+      <find>active_reg</find>
+      <find>active_registration</find>
     </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
@@ -223,8 +219,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/src/layouts/Main.vue" />
         <option value="$PROJECT_DIR$/src/main/webapp/src/pages/Login.vue" />
         <option value="$PROJECT_DIR$/src/main/webapp/src/pages/Register.vue" />
-        <option value="$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java" />
         <option value="$PROJECT_DIR$/src/main/src/ASTWeb/controller/UserManger.java" />
+        <option value="$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java" />
       </list>
     </option>
   </component>
@@ -980,7 +976,7 @@
       <workItem from="1514861512160" duration="4225000" />
       <workItem from="1514872361270" duration="996000" />
       <workItem from="1514890046966" duration="1121000" />
-      <workItem from="1515118334878" duration="8339000" />
+      <workItem from="1515118334878" duration="11385000" />
     </task>
     <task id="LOCAL-00001" summary="https://github.com/xiangpeng93/ASTBackground.git">
       <created>1514171162932</created>
@@ -1038,11 +1034,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514889781249</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1.新增登录与注册操作&#10;2.增加后台代码">
+      <created>1515131303663</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1515131303663</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57535000" />
+    <option name="totallyTimeSpent" value="60581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1060,9 +1063,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42494714" sideWeight="0.46302083" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42494714" sideWeight="0.46302083" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266385" sideWeight="0.42395833" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3266385" sideWeight="0.42395833" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1110,7 +1113,8 @@
     <MESSAGE value="1.修正前端设计，使用try catch" />
     <MESSAGE value="上传maven工程配置" />
     <MESSAGE value="添加权限控制，普通用户无法看到活动管理与活动发布" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加权限控制，普通用户无法看到活动管理与活动发布" />
+    <MESSAGE value="1.新增登录与注册操作&#10;2.增加后台代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.新增登录与注册操作&#10;2.增加后台代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1336,14 +1340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/pages/ActiveRegisterInfoPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/layouts/Main.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1414">
@@ -1355,7 +1351,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/src/pages/AddActivePage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1094">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#3;n#main-layout#0;n#template#0;n#!!top" expanded="true" />
           </folding>
@@ -1399,35 +1395,42 @@
     <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/UploadPic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/UserManger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2653#2662#0" expanded="true" />
+            <element signature="method#doRegister#0;class#UserManger#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/pages/ActiveRegisterInfoPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/ActiveOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="183">
+          <caret line="371" column="55" lean-forward="false" selection-start-line="371" selection-start-column="36" selection-end-line="371" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#doSelect#0;class#ActiveOperation#0" expanded="false" />
             <element signature="e#2740#2749#0" expanded="true" />
             <element signature="method#activeRegister#0;class#ActiveOperation#0" expanded="false" />
             <element signature="e#15953#15979#0" expanded="true" />
             <element signature="class#activeInfoStruct#0;class#ActiveOperation#0" expanded="false" />
-            <element signature="e#23895#23913#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/ASTWeb/controller/UserManger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2653#2662#0" expanded="true" />
-            <element signature="method#doRegister#0;class#UserManger#0" expanded="false" />
+            <element signature="e#23897#23915#0" expanded="true" />
           </folding>
         </state>
       </provider>

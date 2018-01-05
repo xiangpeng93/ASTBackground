@@ -28,8 +28,8 @@ import java.util.Date;
 public class UserManger {
     // JDBC 驱动名及数据库 URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://10.11.160.101:3306/ASTData";
-    //static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/ASTData";
+    //static final String DB_URL = "jdbc:mysql://10.11.160.101:3306/ASTData";
+    static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/ASTData";
     //static String LocalUrl = "http://127.0.0.1:8080";
     static String LocalUrl = "http://astspace.org";
     // 数据库的用户名与密码，需要根据自己的设置

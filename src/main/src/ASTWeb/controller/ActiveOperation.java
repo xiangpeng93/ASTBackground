@@ -415,7 +415,7 @@ public class ActiveOperation {
             Statement stmt = null;
             try {
                 String strActiveName =  request.getParameter("active_name");
-                strActiveName = new String(strActiveName .getBytes("iso8859-1"),"utf-8");
+                //strActiveName = new String(strActiveName .getBytes("iso8859-1"),"utf-8");
                 String sql = String.format( "select * from active_registration where activeName='%s' order by id desc;",strActiveName);
                 System.out.println(sql);
                 // 注册 JDBC 驱动
