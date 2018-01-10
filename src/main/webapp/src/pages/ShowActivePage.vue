@@ -45,21 +45,8 @@
 	  }
 	  finally
 	  {
-		console.log('updated')
-		if($("html").height() > $("#mainDiv").height())
-		{
-		$("#mainDiv").css("height","96%");
-		}
-	  }
-  },
-  updated()
-  {
-	console.log('updated')
-	if($("html").height() > $("#mainDiv").height())
-	  {
-	  $("#mainDiv").css("height","100%");
-	  }
 
+	  }
   }
   
   }

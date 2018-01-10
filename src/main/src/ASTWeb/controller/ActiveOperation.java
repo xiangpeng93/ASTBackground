@@ -145,7 +145,8 @@ public class ActiveOperation {
         PrintWriter out = response.getWriter();
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
         String dateNow = df.format(new Date());
-
+        String tStrActiveBody = request.getParameter("active_body");
+        tStrActiveBody.replace("'","\"");
         try {
             String querySqlActive;
             querySqlActive = String.format(
@@ -174,7 +175,7 @@ public class ActiveOperation {
                         dateNow.toString(),
                         request.getParameter("active_author"),
                         request.getParameter("active_pic"),
-                        request.getParameter("active_body"),
+                        tStrActiveBody,
                         request.getParameter("active_link"),
                         request.getParameter("active_number"),
                         request.getParameter("active_person_number")
@@ -197,7 +198,7 @@ public class ActiveOperation {
                         request.getParameter("active_name"),
                         dateNow.toString(),
                         request.getParameter("active_pic"),
-                        request.getParameter("active_body"),
+                        tStrActiveBody,
                         request.getParameter("active_number"),
                         request.getParameter("active_person_number"),
                         request.getParameter("active_name")

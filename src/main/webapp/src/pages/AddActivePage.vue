@@ -99,12 +99,29 @@
   console.log("get edit");
   console.log(editor2.txt.html());
   },
-  
+  //获取cookie
+  getCookie:function(cname) {
+	  try {
+		  var name = cname + "=";
+
+		  var ca = document.cookie.split(';');
+		  for(var i=0; i<ca.length; i++) {
+			  var c = ca[i];
+			  while (c.charAt(0)==' ') c = c.substring(1);
+			  if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+		  }
+	  }
+	  catch (error)
+	  {
+		  console.log(error)
+	  }
+	  return "";
+  },
   AddActiveInfo: function () {
 	var submitUrl = "http://astspace.org:8080/AST/activeAdd";
 	console.log(submitUrl);
 	
-	var htmlobj=$.ajax({ type: 'POST',url:submitUrl,dataType:'json',data: {active_name:$("#active_name").val(),active_number:$("#active_number").val(),active_person_number:$("#active_person_number").val(),active_body:editor2.txt.html(),active_pic:'img/astlogo.jpeg'},async:false});
+	var htmlobj=$.ajax({ type: 'POST',url:submitUrl,dataType:'json',data: {active_name:$("#active_name").val(),active_author:this.getCookie("userId"),active_number:$("#active_number").val(),active_person_number:$("#active_person_number").val(),active_body:editor2.txt.html(),active_pic:'img/astlogo.jpeg'},async:false});
 	alert(htmlobj.responseText);
   }
   }
