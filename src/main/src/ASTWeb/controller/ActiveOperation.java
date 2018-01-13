@@ -192,7 +192,7 @@ public class ActiveOperation {
             } else {
                 String updateSql = String.format("update active_infos set activeName='%s', activeTime='%s'," +
                                 "activePic='%s',activeBody='%s', " +
-                                "activeNumber='%s',activePeopleNumber='%s' " +
+                                "activeNumber='%s',activePeopleNumber='%s',activeAuthor='%s' " +
                                 " where " +
                                 "activeName='%s';",
                         request.getParameter("active_name"),
@@ -201,6 +201,7 @@ public class ActiveOperation {
                         tStrActiveBody,
                         request.getParameter("active_number"),
                         request.getParameter("active_person_number"),
+                        request.getParameter("active_author"),
                         request.getParameter("active_name")
                 );
                 System.out.println(updateSql);
